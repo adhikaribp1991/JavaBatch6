@@ -20,7 +20,7 @@ public class Car {
 	}
 
 	void makeNoise() {
-		System.out.println(make + "Cara can make noise");
+		System.out.println(make + "Car can make noise");
 	}
 
 	void stop() {
