@@ -2,9 +2,21 @@ package com.syntax.class15;
 
 public class Calculator {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	void add() {
+		int a=10;
+		int b=20;
+		
+		System.out.println(a+b);
+		
+	}
+	void sub() {
+		int a=29;
+		int b=19;
+		
+		System.out.println(a-b);
+	}
+		
 
 	}
 
-}
+
