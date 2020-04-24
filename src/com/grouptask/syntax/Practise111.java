@@ -11,4 +11,5 @@ public class Practise111 {
 		String s = inp.nextLine();
 		// write your code below
 
-	
+	}
+}

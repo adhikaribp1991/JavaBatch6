@@ -17,7 +17,7 @@ public class TaskUserPassword {
 			if(password.length()<8) {
 				System.out.println("Password is too short");
 				
-			}else if(password)
+			}
 			
 		}
 		

@@ -6,7 +6,7 @@ public class PrimeNumber {
 		
 		int number=-2;
 		int value=0;
-		for(int i=2; i<=number-1;i++) {
+		for(int i=2; i<number;i++) {
 			if(number%i==0) {
 				
 			value=value+1;
