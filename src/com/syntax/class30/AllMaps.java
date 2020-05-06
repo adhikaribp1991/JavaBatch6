@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
 public class AllMaps {
@@ -26,36 +27,29 @@ public class AllMaps {
 	household.put("face mask", 50);
 	System.out.println(household);
 	
-	Map<String, Integer> shopping=new TreeMap<>();
-	shopping.putAll(grocery);
+	Map<String, Integer> shopping=new TreeMap<>(grocery);
 	shopping.putAll(household);
 	System.out.println(shopping);
 	
-	//get all keys:
-	for(String key:shopping.keySet()) {
-		System.out.println("key: "+key);
+	Iterator<String> it=shopping.keySet().iterator();
+	while(it.hasNext()) {
+		String key=it.next();	
+		System.out.println("Keys : "+key);
+		}
+	System.out.println("-----Using For Loop---------");
+	for(String keys:shopping.keySet()) {
+		System.out.println("Keys : "+keys);
 	}
-	System.out.println("-----------Value using Iterator-----------");
-	//get all keys using iterator
-	Iterator<String> k=shopping.keySet().iterator();
-	while(k.hasNext()) {
-		String e=k.next();
-		System.out.println(e);
+	System.out.println("---values using for loop-------");
+	for(int value:shopping.values()) {
+		System.out.println(value);
 	}
-	System.out.println("-----values using Iterator-----");
-	Iterator<Integer> i=shopping.values().iterator();
-	while(i.hasNext()) {
-		int j=i.next();
-		System.out.println(j);
+//get all values using iterator
+	System.out.println("----Getting all values using Iterator-----");
+	Iterator<Integer> iter=shopping.values().iterator();
+	while(iter.hasNext()) {
+		int ite=iter.next();
+		System.out.println(ite);
 	}
-	
-	//get all values using loop
-	System.out.println("--------using loop getting values------");
-	for(int f:shopping.values()) {
-		System.out.println(f);
-	}
-		
-	
-	
 	}
 }
